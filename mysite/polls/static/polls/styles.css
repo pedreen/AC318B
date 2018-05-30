@@ -1,0 +1,22 @@
+.asd{
+    display:flex;
+    flex-direction: column; 
+    margin-top: 150px;
+    justify-content:center;
+    align-items:center;
+    
+  }
+
+  .qwe {
+      display: flex;
+      margin-left: 120px;
+  }
+
+  .zxc {
+      color: #000000;
+  }
+
+  .q {
+    display: flex;
+    margin-left: 120px;
+  }

@@ -1,0 +1,44 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'polls/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'polls/styles.css' %}">
+    <title>Polls App</title>
+  </head>
+  <body>
+<main role="main">
+
+<div class="jumbotron jumbotron-fluid">
+                
+<div class="container">
+<div class="asd">
+<h1 class="jumbotron-heading">{{ question.question_text }}</h1>
+    </div>
+
+
+<div class="qwe">
+<ul>
+{% for choice in question.choice_set.all %}
+    <li>{{ choice.choice_text }} --> {{ choice.votes }} voto{{ choice.votes|pluralize }}</li>
+{% endfor %}
+</ul>
+</div>
+
+<div class="q">
+<a  href="{% url 'polls:detail' question.id %}">
+  <input type="button" class="btn btn-info" value="Avaliar Novamente?" /> 
+</a>
+<a href="{% url 'polls:index' %}"><input type="button" class="btn btn-danger" value="Voltar Lista Principal" </a>
+</a>
+</div> 
+</div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
+</body>
+</html>
