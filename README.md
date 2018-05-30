@@ -1,2 +1,2 @@
 # AC318B
-Projeto web sobre avaliação de desempenho empresarial, utilizando python django e javascript.
+Projeto web sobre avaliação de atendimento empresarial, utilizando python django e bootstrap.
